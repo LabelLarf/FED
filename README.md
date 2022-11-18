@@ -70,30 +70,70 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Lijst met mijn bevindingen die in de testen naar voren kwamen:
+  (Voor de video's met de testen, bekijk de folder images/toegankelijkheidstesten)
 
-  #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Screenreader
+  • Knoppen worden als afbeeldingen aangeroepen.
+  • Afbeeldingen hebben geen duidelijke naam.
+  • Belangrijke gedeeltes worden overgeslagen.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Muis en toetsenbord
+  • Gedeeltes worden overgeslagen.
+  • Tab (focus vormgeving) is goed zichtbaar.
+  • Taal selecteren wordt overgeslagen.
+
+  Concentratie
+  • Een ballon hoog houden en door de website heen gaan was aardig goed te doen.
+
+  Motoriek (elastiekjes)
+  • Met elastiekjes en een muis, was de website nog goed te gebruiken.
+
+  Visueel (+ brillen)
+  • Met de brillen (oogproblemen) was alles nog wel leesbaar en elementen snel te onderscheiden van elkaar.
+  • Zwart/wit contrast is soms te weinig op gedeeltes waar wit op geel valt.
+  • Contrasten van andere limieten met kleuren, zijn wel leesbaar.
+  
+
+  #### Screenreader 
+  Met de screenreader had Koen Dekker de DHLparcel website getest. Wat er naar voren kwam, was dat bepaalde knoppen aangeroepen worden als afbeeldingen.
+  Specifiek de optie om te zoeken doormiddel van het vergrootglas. Ook hadden bepaalde afbeeldingen geen duidelijke naam, waardoor je niet wist waar de afbeelding over ging.
+  Op een van de pagina's werd er zelfs een belangrijke sectie overgeslagen en kon je niet op komen met het gebruik van de TAB.
+
+  Dit kan opgelost worden door knoppen opgeroept worden als knoppen en niet als afbeeldingen. In deze context dus de zoekfunctie (vergrootglas). Zo krijgt de gebruiker de juiste informatie en dat het interactief is.
+  Afbeeldingen moeten een duidelijke naam en omschrijving hebben, die goed uitlegd wat er op de afbeelding te zien is.
+  Alle secties moeten bereikbaar zijn via de screenreader. Dit is op te lossen door het zo te programmeren dat het duidelijk word voor de screenreader dat er nog een sectie tussenstaat en even belangrijk is.
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Doormiddel van de TAB werden sommige secties overgeslagen. Wel was de richting van de TAB fijn en ging die niet door alle menu opties heen.
+  De Tab (focus omgeving) was voor het meerderdeel leesbaar, behalve op bepaalde knoppen in de footer. Wel word de taalselectie in de header overgeslagen.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Dit kan opgelost worden door de TAB geen secties meer over te laten slaan en deze beter te programmeren en bijpassende informatie aan deze secties te geven, dat het overslaan niet meer van toepassing is.
+  De focusomgeving van de TAb kan nu zo nog aangepast worden dat het op alle knoppen goed te zien is, waar de focus zich bevind.
+  Voor de taalselectie moet deze zo aangepast worden dat het bij deze ook TAB baar is en niet meer overgeslagen word.
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Met het testen van motoriek had ik aan Koen 2 elastiekjes gegeven, die hij aan iedere hand om zijn wijsvinger, middelvinger en ringvinger moest binden.
+  Hier kwam naar voren dat de website eigenlijk zo best goed te gebruiken was. Wel gebruikte Koen een muis, maar had hier geen moeite mee en kon de website prima bedienen.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Hier zijn dus geen oplossingen voor nodig.
 
 
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  #### Concentratie (ballon)
+  Ook hadden we getest met een ballon en hoe deze de concentratie zou afnemen van de website. Toen Koen de ballon aan het hoog houden was, navigeerde hij nog prima door de website heen en kon zelfs zijn pakketnummer invoeren.
+  Hij zei dat dit kwam, omdat de informatie precies lang en informatief genoeg is, waardoor hij snel wist waar hij overal moest zijn om zijn taak te vervullen.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Hier zijn dus geen oplossingen voor nodig.
+
+
+  #### Visueel (brillen, contrast, kleurenblind). 
+  Als laatst gingen we testen met een visuele beperking. Hier gaf ik aan Koen een bril die de beperking liet zien van iemand met diabetic eye disease. 
+  Tijdens het gebruiken van de bril, ondervond hij niet echt visuele problemen en kon hij alles prima lezen.
+  Verder hadden wij nog getest op kleurenblindheid en hoe hij deze ondervond tijdens het gebruik van de website. Het enige waar hij soms moeite mee had in de setting zwart/wit, was dat sommige witte/gele knoppen niet echt leesbaar waren op een gele/witte achtergrond.
+
+  Hoe de witte/gele knoppen opgelost kunnen worden, is door deze meer contrast te geven als ze op een gele/witte achtergrond staan. zo worden ze veel beter leesbaar.
 
 </details>
 
@@ -104,14 +144,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### Pagina 1: 
+  <img src="readme-images/html-breakdown-pagina1.jpg" width="375px" alt="Breakdown van de html in pagina 1 en 2">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### Pagina 2: 
+  <img src="readme-images/html-breakdown-pagina2.jpg" width="375px" alt="Breakdown van de html in pagina 1 en 2">
 
 </details>
 
