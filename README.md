@@ -96,6 +96,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
 
   #### Screenreader 
+  <img src="readme-images/screenreader.png" width="375px" alt="Website word getest met een screenreader">
   Met de screenreader had Koen Dekker de DHLparcel website getest. Wat er naar voren kwam, was dat bepaalde knoppen aangeroepen worden als afbeeldingen.
   Specifiek de optie om te zoeken doormiddel van het vergrootglas. Ook hadden bepaalde afbeeldingen geen duidelijke naam, waardoor je niet wist waar de afbeelding over ging.
   Op een van de pagina's werd er zelfs een belangrijke sectie overgeslagen en kon je niet op komen met het gebruik van de TAB.
@@ -106,6 +107,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Muis en Toetsenbord 
+  <img src="readme-images/muis-en-toetsenbord.png" width="375px" alt="Website word getest met een toetsenbord">
   Doormiddel van de TAB werden sommige secties overgeslagen. Wel was de richting van de TAB fijn en ging die niet door alle menu opties heen.
   De Tab (focus omgeving) was voor het meerderdeel leesbaar, behalve op bepaalde knoppen in de footer. Wel word de taalselectie in de header overgeslagen.
 
@@ -115,6 +117,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Motoriek (shocks, elastiekjes)
+  <img src="readme-images/motoriek-testen.png" width="375px" alt="Website word getest op motoriek">
   Met het testen van motoriek had ik aan Koen 2 elastiekjes gegeven, die hij aan iedere hand om zijn wijsvinger, middelvinger en ringvinger moest binden.
   Hier kwam naar voren dat de website eigenlijk zo best goed te gebruiken was. Wel gebruikte Koen een muis, maar had hier geen moeite mee en kon de website prima bedienen.
 
@@ -122,6 +125,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Concentratie (ballon)
+  <img src="readme-images/concentratie-testen.png" width="375px" alt="Website word getest met een ballon">
   Ook hadden we getest met een ballon en hoe deze de concentratie zou afnemen van de website. Toen Koen de ballon aan het hoog houden was, navigeerde hij nog prima door de website heen en kon zelfs zijn pakketnummer invoeren.
   Hij zei dat dit kwam, omdat de informatie precies lang en informatief genoeg is, waardoor hij snel wist waar hij overal moest zijn om zijn taak te vervullen.
 
@@ -129,6 +133,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Visueel (brillen, contrast, kleurenblind). 
+  <img src="readme-images/diabetic-testen-bril.jpg" width="375px" alt="Website word getest met een diabetic bril">
   Als laatst gingen we testen met een visuele beperking. Hier gaf ik aan Koen een bril die de beperking liet zien van iemand met diabetic eye disease. 
   Tijdens het gebruiken van de bril, ondervond hij niet echt visuele problemen en kon hij alles prima lezen.
   Verder hadden wij nog getest op kleurenblindheid en hoe hij deze ondervond tijdens het gebruik van de website. Het enige waar hij soms moeite mee had in de setting zwart/wit, was dat sommige witte/gele knoppen niet echt leesbaar waren op een gele/witte achtergrond.
