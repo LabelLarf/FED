@@ -167,16 +167,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Wat best goed ging, was het netjes naast elkaar krijgen van elementen doormiddel van flexbox. Ik had wel een paar momenten dat ik wat meer moeite had met het vinden 
+van de goede selectoren, om deze vorm te geven. Het is alleen niet gelukt om de footer af te krijgen, voor het gesprek. Verder had ik niet veel moeite met de code en het opstellen hiervan.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Larissa        | Lars               | Yasmine      | ---------        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | div of section | Nog niks           | Nog niks     | ---------        |
+  | ben op schema? | Nog niks           | Nog niks     | ---------        |
   | ...            | ...                | ...          | ...              |
 
 
