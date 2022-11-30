@@ -83,6 +83,7 @@ header nav{
 header nav div:nth-of-type(2) ul{
 	display:flex;
 	align-items:center;
+	margin:0em;
 }
 
 header nav div:nth-of-type(2) ul li{
