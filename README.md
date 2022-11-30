@@ -190,11 +190,11 @@ van de goede selectoren, om deze vorm te geven. Het is alleen niet gelukt om de 
 
   ### Agenda voor meeting
 
-  | Larissa               | Lars               | Yasmine      |
-  | ---                   | ---                | ---          |
-  | Divs goed toegepast?  | ...                | en ik dit    |
-  | CSS logisch ingedeeld?| ...                | nog een punt | 
-  | ...                   | ...                | ...          |
+  | Larissa               | Lars               | Yasmine               |
+  | ---                   | ---                | ---                   |
+  | Divs goed toegepast?  | Niet bekend        | Vraag over articles   |
+  | CSS logisch ingedeeld?| Niet bekend        | Vraag over Divs       | 
+  | ...                   | ...                | ...                   |
 
 
   ### Verslag van meeting

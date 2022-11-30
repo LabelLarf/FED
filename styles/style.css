@@ -78,22 +78,20 @@ header nav{
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
-	
 }
 
-header nav ul{
+header nav div:nth-of-type(2) ul{
 	display:flex;
-	justify-content:space-between;
 	align-items:center;
 }
 
-header nav ul li{
+header nav div:nth-of-type(2) ul li{
 	display:flex;
 	align-items:center;
 	padding: 0em 2em 0em 2em;
 }
 
-header nav ul li a{
+header nav div:nth-of-type(2) ul li a{
 	color: var(--color-text);
 	font-family:var(--heading-text);
 	font-weight:100;
@@ -101,19 +99,23 @@ header nav ul li a{
 	text-decoration:none;
 }
 
-header nav a:last-of-type img{
+header nav div:nth-of-type(3) a:last-of-type img{
 	width: 1.5em;
 }
 
-header nav a:first-of-type img{
+header nav div:nth-of-type(1) a:first-of-type img{
 	width: 9em;
 }
 
-header nav a:last-of-type img{
-	display:none;
+header nav div:nth-of-type(3) a:last-of-type img{
+	display:flex;
+	display: none;
 	cursor: pointer;
 }
 
+header nav div:first-of-type{
+	flex-grow: 3;
+}
 
 
 
@@ -528,11 +530,11 @@ main section:first-of-type form input:nth-of-type(3){
 /**********************/
 
 @media(max-width:768px){
-	header nav a:last-of-type img{
+	header nav div:nth-of-type(3) a:last-of-type img{
 		display:block;
 	}
 
-	header nav ul{
+	header nav div:nth-of-type(2) ul{
 		display:none;
 		position:fixed;
 		top:-100%;
@@ -542,14 +544,6 @@ main section:first-of-type form input:nth-of-type(3){
 		background-color:yellow;
 		width:100%;
 		text-align:center;
-	}
-
-	header nav ul li{
-		margin:2em;
-	}
-
-	header nav ul.active{
-		top:0;
 	}
 
 }
