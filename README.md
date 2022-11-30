@@ -1,16 +1,4 @@
-# Procesverslag
-Markdown is een simpele manier om HTML te schrijven.  
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
-
-
-
-
-## Jij
+## Procesverslag van Larissa
 
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
@@ -30,7 +18,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Je website
+## Mijn gekozen website
 
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
@@ -40,25 +28,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/pagina-1/1.jpg" width="375px" alt="De startpagina van de website">
-  <img src="readme-images/pagina-1/2.jpg" width="375px" alt="De startpagina van de website">
-  <img src="readme-images/pagina-1/3.jpg" width="375px" alt="De startpagina van de website">
-  <img src="readme-images/pagina-1/4.jpg" width="375px" alt="De startpagina van de website">
-  <img src="readme-images/pagina-1/5.jpg" width="375px" alt="De startpagina van de website">
-  <img src="readme-images/pagina-1/6.jpg" width="375px" alt="De startpagina van de website">
-  <img src="readme-images/pagina-1/7.jpg" width="375px" alt="De startpagina van de website">
-  <img src="readme-images/pagina-1/8.jpg" width="375px" alt="De startpagina van de website">
+  <img src="readme-images/pagina-1/1.jpg" width="275px" alt="De startpagina van de website">
+  <img src="readme-images/pagina-1/2.jpg" width="275px" alt="De startpagina van de website">
+  <img src="readme-images/pagina-1/3.jpg" width="275px" alt="De startpagina van de website">
+  <img src="readme-images/pagina-1/4.jpg" width="275px" alt="De startpagina van de website">
+  <img src="readme-images/pagina-1/5.jpg" width="275px" alt="De startpagina van de website">
+  <img src="readme-images/pagina-1/6.jpg" width="275px" alt="De startpagina van de website">
+  <img src="readme-images/pagina-1/7.jpg" width="275px" alt="De startpagina van de website">
+  <img src="readme-images/pagina-1/8.jpg" width="275px" alt="De startpagina van de website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/pagina-2/1.jpg" width="375px" alt="Tracking van je pakket, pagina">
-  <img src="readme-images/pagina-2/2.jpg" width="375px" alt="Tracking van je pakket, pagina">
-  <img src="readme-images/pagina-2/3.jpg" width="375px" alt="Tracking van je pakket, pagina">
-  <img src="readme-images/pagina-2/4.jpg" width="375px" alt="Tracking van je pakket, pagina">
-  <img src="readme-images/pagina-2/5.jpg" width="375px" alt="Tracking van je pakket, pagina">
-  <img src="readme-images/pagina-2/6.jpg" width="375px" alt="Tracking van je pakket, pagina">
-  <img src="readme-images/pagina-2/7.jpg" width="375px" alt="Tracking van je pakket, pagina">
-  <img src="readme-images/pagina-2/8.jpg" width="375px" alt="Tracking van je pakket, pagina">
+  <img src="readme-images/pagina-2/1.jpg" width="275px" alt="Tracking van je pakket, pagina">
+  <img src="readme-images/pagina-2/2.jpg" width="275px" alt="Tracking van je pakket, pagina">
+  <img src="readme-images/pagina-2/3.jpg" width="275px" alt="Tracking van je pakket, pagina">
+  <img src="readme-images/pagina-2/4.jpg" width="275px" alt="Tracking van je pakket, pagina">
+  <img src="readme-images/pagina-2/5.jpg" width="275px" alt="Tracking van je pakket, pagina">
+  <img src="readme-images/pagina-2/6.jpg" width="275px" alt="Tracking van je pakket, pagina">
+  <img src="readme-images/pagina-2/7.jpg" width="275px" alt="Tracking van je pakket, pagina">
+  <img src="readme-images/pagina-2/8.jpg" width="275px" alt="Tracking van je pakket, pagina">
  
 </details>
 
@@ -181,12 +169,9 @@ van de goede selectoren, om deze vorm te geven. Het is alleen niet gelukt om de 
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Articles kunnen beter vervangen worden door sections
+  - Er staan veel sections in sections die best weg mogen
+  - Divjes kunnen beter als section, ookal krijg je daar een warning van over de headings.
 
 </details>
 
@@ -200,17 +185,16 @@ van de goede selectoren, om deze vorm te geven. Het is alleen niet gelukt om de 
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Wat er goed ging was dat ik alle css toegepast heb op alle 2 de pagina's. Waar ik nog wel moeite mee had, was het toepassen van javascript op elementen die het nodig hebben (zoals het uitklapbare menu). Ik wil hier in het weekend meer tijd in steken + de website responsive hebben.
+  Verder wil ik verschillende states erin zetten en als het lukt, leuke animaties erin verwerken.
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Larissa               | Lars               | Yasmine      |
+  | ---                   | ---                | ---          |
+  | Divs goed toegepast?  | ...                | en ik dit    |
+  | CSS logisch ingedeeld?| ...                | nog een punt | 
+  | ...                   | ...                | ...          |
 
 
   ### Verslag van meeting

@@ -1,240 +1,368 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 *, *::after, *::before {
   box-sizing:border-box;  
 }
 
-button, summary {
-	cursor: pointer;
-}
 
 
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
+/***********************************/
+/* ALGEMENE STYLING BEIDE PAGINA'S*/
+/***********************************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:rgb(11, 11, 11);
+	--color-background:whitesmoke;
+	--color-footer: #f1f1f1;
+	--color-button: #C6313C;
+	--gradient-background: rgb(247,206,70);
+	--gradient:linear-gradient(90deg, rgba(247,206,70,1) 0%, rgba(245,231,181,1) 100%);
+	--heading-text: 'Passion One', sans-serif;
+	--body-text: montserrat, sans-serif;
 }
-
-
-
-/****************/
-/* MIJN STYLING */
-/****************/
 
 Body{
 	margin:0em;
-	font-family: montserrat, sans-serif;
+	background-color: var(--color-background);
+	font-family: var(--body-text);
 	font-weight: 300;
-	background-color: whitesmoke;
+	line-height: 1.8em;
 }
 
 h1{
-	font-family: 'Passion One', sans-serif;
+	font-family: var(--heading-text);
 	font-weight: 800;
 	text-transform: uppercase;
     line-height: 1;
-	color:white;
+	color:var(--color-background);
 }
 
 h2{
-	font-family: 'Passion One', sans-serif;
+	font-family: var(--heading-text);
 	font-weight: 800;
 	text-transform: uppercase;
     line-height: 1;
-	color: 111px;;
+	color: var(--color-text);
 }
 
 h3{
 	margin-top:2em;
-	font-family: montserrat, sans-serif;
+	font-family: var(--body-text);
 	font-weight: 200;
 	text-transform: uppercase;
-	color:white;
 	line-height: 0em;
+	color:var(--color-background);
 }
 
 h4{
 	margin:0em;
-	font-family: montserrat, sans-serif;
+	font-family: var(--body-text);
 	font-weight: 600;
 	font-size: 1em;
 }
 
-img{
-	width: 4em;
-}
 
-/* HEADER */
 
+/************/
+/* HEADER*/
+/************/
 header{
-	position: fixed;
+	width: 100%;
 	top: 0;
-  	width: 100%
+	position: fixed;
+	padding:1em;
+	background: var(--gradient-background);
+	background: var(--gradient);
 }
 
 header nav{
-	padding:1em;
-	background: rgb(247,206,70);
-	background: linear-gradient(90deg, rgba(247,206,70,1) 0%, rgba(245,231,181,1) 100%);
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
+	
 }
 
-nav:first-of-type div:first-of-type{
+header nav ul{
 	display:flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 12em;
+	justify-content:space-between;
+	align-items:center;
 }
 
-nav:first-of-type div:nth-of-type(2){
+header nav ul li{
 	display:flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 5em;
+	align-items:center;
+	padding: 0em 2em 0em 2em;
 }
 
+header nav ul li a{
+	color: var(--color-text);
+	font-family:var(--heading-text);
+	font-weight:100;
+	font-size:1.1em;
+	text-decoration:none;
+}
 
-nav:first-of-type div a img{
+header nav a:last-of-type img{
 	width: 1.5em;
 }
 
-nav:first-of-type div:first-of-type a:nth-of-type(2) img{
+header nav a:first-of-type img{
 	width: 9em;
+}
+
+header nav a:last-of-type img{
+	display:none;
+	cursor: pointer;
 }
 
 
 
 
-/* CONTENT SECTIE 1 */
+/***********/
+/* FOOTER*/
+/***********/
+footer li{
+	list-style-type: none;
+}
+
+footer section nav:first-of-type{
+	background-color: var(--color-footer);
+}
+
+footer section nav:first-of-type ul{
+	width: 100%;
+	margin:0em;
+	padding: 0em;
+}
+
+footer section nav:first-of-type ul li{
+	padding: 1.2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-footer);
+	font-family: var(--heading-text);
+	font-weight: 100;
+	font-size: 1.2em;
+	text-align: left;
+}
+
+footer section nav:first-of-type ul li img{
+	width: 2em;
+}
+
+footer section nav:first-of-type ul li ul{
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: var(--color-footer)
+}
+
+
+/* Cookievoorkeuren button*/
+button{
+	margin-left: 1em;
+	padding: 0.5em;
+	background: var(--color-footer);
+	font-size: 0.8em;
+	font-family: var(--body-text);
+	font-weight: 300;
+	border:none;
+}
+
+
+/* Social media buttons*/
+footer section nav:nth-of-type(2){
+	padding: 0em 2em 0em 0.8em;
+	background: var(--color-footer);
+}
+
+footer section nav:nth-of-type(2) ul{
+	margin: 0em;
+	padding:0.5em;
+	padding-left: 0em;
+	display: flex;
+	gap:0.2em;
+}
+
+footer section nav:nth-of-type(2) img{
+	width: 3em;
+}
+
+
+/* Onderste gedeelte footer met gradient*/
+footer section:nth-of-type(2){
+	padding: 0em 2em 0em 2em;
+	background: var(--gradient-background);
+	background: var(--gradient);
+}
+
+footer section:nth-of-type(2) p{
+	padding-bottom: 0em;
+	font-size: 0.8em;
+}
+
+footer section:nth-of-type(2) a img{
+	width: 10em;
+	margin-top: 1em;
+	padding-top: 1em;
+}
+
+footer section:nth-of-type(2) section{
+	margin-top: -2em;
+	padding-top: 0em;
+	padding-bottom: 2em;
+}
+
+footer section:nth-of-type(2) section a img:first-of-type{
+	width: 9em;
+	padding-left: 0em;
+}
+
+
+
+
+
+
+/**********************/
+/* STYLING PAGINA 1*/
+/**********************/
+
+
+/* CONTENT SECTIE 1*/
 main{
 	margin-top: 4em;
 }
 
-main div:first-child{
+main section:first-of-type{
 	padding:2em;
 	background-image: url('../images/pagina-1/bus-overlay.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-main div:first-child section{
-	background-color: whitesmoke;
-}
-
-main div:first-child section section{
-	background-color: whitesmoke;
-	padding:0.5em 0.8em 0.5em 0.8em;
-}
-
-main div:first-child section section a{
-	padding:0.2em;
-	display:flex;
+main section:first-of-type a{
+	width: 100%;
+	padding:0.7em 1em 0.7em 1em;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom-style: solid;
-	border-color:lightgray ;
-	color:black;
+	background-color: var(--color-background);
+	color: var(--color-text);
 	text-decoration: none;
+	line-height: 1em;
 }
 
-main div:first-child section section a img{
-	width: 5em;
+main section:first-of-type a img{
+	width: 4.5em;
 }
 
-main div:first-child section section a div img{
+main section:first-of-type a section{
+	width: 65%;
+	padding:0.2em;
+	background-image: none;
+	display:flex;
+	align-items: center;
+}
+
+main section:first-of-type a section img{
 	width: 3em;
 }
 
-main div:first-child section section a div{
-	width: 65%;
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
-}
 
 
 
-/* CONTENT SECTIE 2-4-5-6 */
-main div article{
-	margin-top: 6em;
+/* CONTENT SECTIE 2-4-5-6*/
+main section:nth-of-type(2), section:nth-of-type(3), section:nth-of-type(4), section:nth-of-type(5), section:nth-of-type(6){
+	margin-top: 7em;
 	padding: 0em 2em 0em 2em;
 }
 
-main div article a img{
+main section:nth-of-type(2) a:first-of-type img, main section:nth-of-type(3) a:first-of-type img, main section:nth-of-type(4) a:first-of-type img, main section:nth-of-type(5) a:first-of-type img, main section:nth-of-type(6) a:first-of-type img{
 	width: 100%;
 	text-align: center;
-
 }
 
-main div article section a{
+main section:nth-of-type(2) a:nth-of-type(2), main section:nth-of-type(3) a:nth-of-type(2), main section:nth-of-type(4) a:nth-of-type(2), main section:nth-of-type(5) a:nth-of-type(2), main section:nth-of-type(6) a:nth-of-type(2), #trackandTrace main section:nth-of-type(5) a{
+	padding-left: 0em;
 	display: flex;
 	align-items: center;
-	color:black;
-	text-decoration: none;
-	font-family: montserrat, sans-serif;
+	font-family: var(--body-text);
 	font-weight: 600;
 	font-size: 1em;
+	color:var(--color-text);
+	text-decoration: none;
+	line-height: 1em;
 }
 
-main div article section a img{
+main section:nth-of-type(2) a:nth-of-type(2) img, main section:nth-of-type(3) a:nth-of-type(1) img, main section:nth-of-type(4) a:nth-of-type(2) img, main section:nth-of-type(5) a:nth-of-type(2) img, main section:nth-of-type(6) a:nth-of-type(2) img{
 	width: 3em;
 	margin-left:-0.5em;
-	
 }
 
 
 
-/* CONTENT SECTIE 3 */
-main div:nth-of-type(3) article{
+
+/* CONTENT SECTIE 3*/
+main section:nth-of-type(3){
+	padding: 4em 2em 4em 2em;
 	background-image: url('../images/pagina-1/oranje.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 4em 2em 4em 2em;
 }
 
-main div:nth-of-type(3) h2, main div:nth-of-type(3) p, main div:nth-of-type(3) a{
-	color:white;
+main section:nth-of-type(3) h2, main section:nth-of-type(3) p, main section:nth-of-type(3) a{
+	color:var(--color-background);
+}
+
+main section:nth-of-type(3) a img{
+	width: 3em;
+	margin-left:-0.5em;
+}
+
+main section:nth-of-type(3) a{
+	padding-left: 0em;
+	display: flex;
+	align-items: center;
+	font-family: var(--body-text);
+	font-weight: 600;
+	font-size: 1em;
+	text-decoration: none;
+	color:var(--color-background);
 }
 
 
-/* CONTENT SECTIE 4-5-6 */
-main div:nth-of-type(4) h3, main div:nth-of-type(5) h3, main div:nth-of-type(6) h3{
-	color:black;
+
+/* CONTENT SECTIE 4-5-6*/
+main section:nth-of-type(4) h3, main section:nth-of-type(5) h3, main section:nth-of-type(6) h3{
+	color:var(--color-text);
 }
 
 
 
-/* CONTENT SECTIE 6 */
-main div:nth-of-type(6){
+/* CONTENT SECTIE 6*/
+main section:nth-of-type(6){
 	padding-bottom:4em;
 }
 
 
-/* STICKY KNOP */
+
+
+/* STICKY KNOP*/
 main div:last-of-type a{
-	display: flex;
-	align-items: center;
-	background-color: #C6313C;
-	border-radius: 5em;
 	width: 12em;
 	height: 3.5em;
 	position: fixed;
 	bottom: 2em;
 	right: 1em;
-	color:white;
-	text-decoration: none;
-	font-family: montserrat, sans-serif;
+	display: flex;
+	align-items: center;
+	background-color: var(--color-button);
+	color:var(--color-background);
+	font-family: var(--body-text);
 	font-weight: 600;
 	font-size: 0.9em;
+	text-decoration: none;
+	border-radius: 5em;
 }
 
 main div:last-of-type img{
@@ -244,18 +372,184 @@ main div:last-of-type img{
 
 
 
-/* FOOTER */
-footer section nav{
-	padding:1em;
-	background: lightgray;
+
+/**********************/
+/* STYLING PAGINA 2*/
+/**********************/
+
+
+/* CONTENT SECTIE 1*/
+#trackandTrace main section:first-of-type{
+	padding:2em;
+	background-image: url('../images/pagina-1/strandhuisOverlay.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-footer section:nth-of-type(2){
-	padding:1em;
-	background: rgb(247,206,70);
-	background: linear-gradient(90deg, rgba(247,206,70,1) 0%, rgba(245,231,181,1) 100%);
+
+main section:first-of-type form{
+	padding: 2em;
+	background-color: var(--color-background);
 }
 
-footer li{
+main section:first-of-type form img{
+	width: 6em;
+}
+
+main section:first-of-type form h4{
+	margin-top: 0.5em;
+	font-family: var(--heading-text);
+	font-size: 1.2em;
+	font-weight: 100;
+}
+
+main section:first-of-type form p{
+	margin-top: 0.2em;
+	margin-bottom: 1.5em;
+}
+
+main section:first-of-type form input:first-of-type, main section:first-of-type form input:nth-of-type(2){
+	width: 100%;
+	margin-bottom: 1em;
+	padding: 1em 0em 1em 1em;
+	border-color:lightgray;
+	color:black;
+	font-family: var(--body-text);
+	font-weight: 100;
+	font-size: 0.8em;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+}
+
+main section:first-of-type form input:nth-of-type(3){
+	width: 100%;
+	margin-top:1em;
+	padding: 1em 1em 1em 1em;
+	background-color: var(--color-button);
+	border-color:var(--color-background);
+	color:var(--color-footer);
+	font-family: var(--heading-text);
+	font-weight: 100;
+	font-size: 1em;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+}
+
+
+
+/* CONTENT SECTIE 2*/
+#trackandTrace main section:nth-of-type(2){
+	margin-top: 4em;
+}
+
+#trackandTrace main section:nth-of-type(2) h3{
+	color: black;
+}
+
+#trackandTrace main section:nth-of-type(2) div, #trackandTrace main section:nth-of-type(5) div {
+	width: 50%;
+	margin-top:2em;
+	margin-bottom: 2em;
+	margin-left: 0.5em;
+	border-right: 0.1em solid black;
+	height: 3em;
+}
+
+
+
+/* CONTENT SECTIE 3*/
+#trackandTrace main section:nth-of-type(3){
+	background-image: none;
+	background-color:#f7ce46;
+}
+
+#trackandTrace main section:nth-of-type(3) img{
+	width: 100%;
+}
+
+#trackandTrace main section:nth-of-type(3) h2, #trackandTrace main section:nth-of-type(3) h3, #trackandTrace main section:nth-of-type(3) p{
+	color:black;
+}
+
+#trackandTrace main section:nth-of-type(3) a:nth-of-type(2) img{
+	width: 3em;
+}
+
+
+#trackandTrace main section:nth-of-type(5){
+	margin-bottom:5em;
+}
+
+#trackandTrace main section:nth-of-type(5) ul{
+	width: 100%;
+	margin:0em;
+	padding: 0em;
+}
+
+#trackandTrace main section:nth-of-type(5) ul li{
+	padding: 1.2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: var(--heading-text);
+	font-weight: 100;
+	font-size: 1.2em;
+	text-align: left;
+	line-height: 1.2em;
 	list-style-type: none;
+}
+
+#trackandTrace main section:nth-of-type(5) ul li img{
+	width: 2em;
+}
+
+#trackandTrace main section:nth-of-type(5) ul li ul{
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: var(--color-footer)
+}
+
+#trackandTrace main section:nth-of-type(5) a{
+	margin-top: 1.5em;
+}
+
+#trackandTrace main section:nth-of-type(5) a img{
+	width: 3em;
+}
+
+
+
+
+/**********************/
+/* RESPONSIVENESS*/
+/**********************/
+
+@media(max-width:768px){
+	header nav a:last-of-type img{
+		display:block;
+	}
+
+	header nav ul{
+		display:none;
+		position:fixed;
+		top:-100%;
+		gap:0;
+		bottom:70px;
+		flex-direction:column;
+		background-color:yellow;
+		width:100%;
+		text-align:center;
+	}
+
+	header nav ul li{
+		margin:2em;
+	}
+
+	header nav ul.active{
+		top:0;
+	}
+
 }
