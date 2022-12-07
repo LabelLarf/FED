@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Larissa van Rijn">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>DHL Parcel</title>
+	<title>DHL-Parcel</title>
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.png">
 </head>
@@ -15,27 +15,25 @@
 <body>
 	<Header>
 		<nav>
-			<div>
-			<a href="index.html"><img src="./images/pagina-1/logo.png" alt="Logo van DHL"> </a>
-			</div>
-			<div>
-				<ul>
-					<li> <a href="index.html"> Klantenservice</a></li>
-					<li> <a href="index.html"> Vactures </a></li>
-					<li> <a href="index.html"> SameDream </a></li>
-					<li> <a href="index.html"> Over </a></li>
-				</ul>	
-			</div>
-			<div>		
-			<a href="index.html"><img src="./images/pagina-1/menu.svg" alt="hamburger menu van DHL"> </a>
-		</div>	
+			<a href="track-and-trace.html"><img class="logo" src="./images/pagina-1/logo.png" alt="Logo van DHL"></a>
+			<img aria-label="hidden" class="openMenu" src="./images/pagina-1/menu.svg" alt="hamburger menu openen">
+			<ul class="mainMenu">
+				<li> <a href="track-and-trace.html"> Klantenservice</a></li>
+				<li> <a href="track-and-trace.html"> Vactures </a></li>
+				<li> <a href="track-and-trace.html"> SameDream </a></li>
+				<li> <a href="track-and-trace.html"> Over </a></li>
+				<li><img class="closeMenu" src="./images/pagina-1/menu-sluit.svg" alt="hamburger menu sluiten"></li>
+			</ul>		
 		</nav>
 	</Header>
 
 	<main>
 		<section>
-			<h3>Consument</h3>
-			<h1>Versturen of ontvangen? Zo geregeld zo geleverd</h1>
+			<div class="hidden">
+				<h3>Consument</h3>
+				<h1>Versturen of ontvangen? Zo geregeld zo geleverd</h1>
+			</div>
+			<div>
 				<a href="track-and-trace.html">
 					<img src="./images/pagina-1/roll.svg" alt="Waar is mijn pakket?">
 					<section>
@@ -44,7 +42,7 @@
 					</section>
 				</a>
 				
-				<a href="index.html">
+				<a href="track-and-trace.html">
 					<img src="./images/pagina-1/delivery.svg" alt="Pakket versturen">
 					<section>
 						<h4>Pakket versturen</h4>
@@ -52,7 +50,7 @@
 					</section>
 				</a>
 		
-				<a href="index.html">
+				<a href="track-and-trace.html">
 					<img src="./images/pagina-1/delivery-options.svg" alt="Bezorging aanpassen">
 					<section>
 						<h4>Bezorging aanpassen</h4>
@@ -60,131 +58,142 @@
 					</section>
 				</a>
 
-				<a href="index.html">
+				<a href="track-and-trace.html">
 					<img src="./images/pagina-1/packing.svg" alt="Waar is mijn DHL punt?">
 					<section>
 						<h4>Waar is mijn DHL punt?</h4>
 						<img src="./images/pagina-1/button-rechts-grijs.svg" alt="Bekijk meer">
 					</section>
 				</a>
+			</div>
 		</section>
 
 		<section>
-			<a href="index.html"><img src="./images/pagina-1/roll.svg" alt="Volg je pakket op de voet"></a>
-			<h2>Volg je pakket op de voet</h2>
-			<p>Of je nu een bestelling uit Parijs verwacht of een cadeautje uit Enschede: via track en trace weet je altijd precies waar je pakket is en wanneer je m kunt verwachten.</p>
-			<a href="index.html"><img src="./images/pagina-1/button-rechts.svg" alt="Bekijk meer">Ontdek waar je pakket nu is</a>
+			<div>
+				<a href="track-and-trace.html"><img src="./images/pagina-1/roll.svg" alt="Volg je pakket op de voet"></a>
+			</div>
+			<div class="hidden">
+				<h2>Volg je pakket op de voet</h2>
+				<p>Of je nu een bestelling uit Parijs verwacht of een cadeautje uit Enschede: via track en trace weet je altijd precies waar je pakket is en wanneer je m kunt verwachten.</p>
+				<a href="track-and-trace.html"><img src="./images/pagina-1/button-rechts.svg" alt="Bekijk meer">Ontdek waar je pakket nu is</a>
+			</div>
 		</section>
 
 		<section>
+			<div class="hidden">
 			<h3>Trotse sponsor</h3>
 			<h2>Word ook supporter van onze oranjevrouwen</h2>
 			<p>DHL is trotse sponsor en logistiek partner van onze nationale vrouwenteams in voetbal, hockey, handbal en volleybal. Samen delen we één droom: de absolute top bereiken, waar we al hard naartoe op weg zijn. Ook jij kunt supporter worden van deze SameDream missie. Meld je aan om als eerste op de hoogte te zijn van ticketacties, het laatste sportnieuws en ontvang exclusieve kortingen.</p>
-			<a href="index.html"><img src="./images/pagina-1/button-rechts.svg" alt="Bekijk meer">Word supporter</a>
+			</div>
+			<a href="track-and-trace.html"><img src="./images/pagina-1/button-rechts.svg" alt="Bekijk meer">Word supporter</a>
 		</section>
 
 		<section>
-			<a href="index.html"><img src="./images/pagina-1/mijn-dhl.png" alt="Mijn DHL app"></a>
-			<h3>Mijn DHL app</h3>
-			<h2>Al je pakketjes in de hand</h2>
-			<p>Of je nou een pakket hebt verstuurd of juist verwacht: met de Mijn DHL op je telefoon of tablet vind je alles terug in één handig overzicht. Zo weet je binnen no-time wanneer je pakketten (en die van je huisgenoten) hun bestemming bereiken. Net buiten de deur op het geplande bezorgmoment? Geen probleem, met een paar drukken op de knop pas je de bezorgtijd en -plaats aan. Dan rijdt onze gele bus vrolijk verder!</p>
-			<a href="index.html"> <img src="./images/pagina-1/button-rechts.svg" alt="Bekijk meer">Download de app</a>
+			<a href="track-and-trace.html"><img src="./images/pagina-1/mijn-dhl.png" alt="Mijn DHL app"></a>
+				<div class="hidden">
+					<h3>Mijn DHL app</h3>
+					<h2>Al je pakketjes in de hand</h2>
+					<p>Of je nou een pakket hebt verstuurd of juist verwacht: met de Mijn DHL op je telefoon of tablet vind je alles terug in één handig overzicht. Zo weet je binnen no-time wanneer je pakketten (en die van je huisgenoten) hun bestemming bereiken. Net buiten de deur op het geplande bezorgmoment? Geen probleem, met een paar drukken op de knop pas je de bezorgtijd en -plaats aan. Dan rijdt onze gele bus vrolijk verder!</p>				
+					<a href="track-and-trace.html"> <img src="./images/pagina-1/button-rechts.svg" alt="Bekijk meer">Download de app</a>
+				</div>
 		</section>
 
 		<section>
-			<a href="index.html"><img src="./images/pagina-1/dhl-duurzaam.jpg" alt="DHL duurzaam"></a>
-			<h3>DHL duurzaam</h3>
-			<h2>Geel is het nieuwe groen</h2>
-			<p>Bij DHL Parcel zijn we hard aan het verduurzamen. Zo rijdt al een derde van onze bezorgauto’s op stroom en proberen we je bestelling in één keer af te leveren. Handig voor jou en beter voor de wereld, want zo besparen we een extra rit door je wijk. Dat scheelt uitstoot. Zelf een pakketje versturen? Dat doe je klimaatneutraal, zonder bijkomende kosten. Die nemen wij voor onze rekening.</p>
-			<a href="index.html"><img src="./images/pagina-1/button-rechts.svg" alt="Bekijk meer">Over DHL GoGreen</a>
+			<a href="track-and-trace.html"><img src="./images/pagina-1/dhl-duurzaam.jpg" alt="DHL duurzaam"></a>
+			<div class="hidden">
+				<h3>DHL duurzaam</h3>
+				<h2>Geel is het nieuwe groen</h2>
+				<p>Bij DHL Parcel zijn we hard aan het verduurzamen. Zo rijdt al een derde van onze bezorgauto’s op stroom en proberen we je bestelling in één keer af te leveren. Handig voor jou en beter voor de wereld, want zo besparen we een extra rit door je wijk. Dat scheelt uitstoot. Zelf een pakketje versturen? Dat doe je klimaatneutraal, zonder bijkomende kosten. Die nemen wij voor onze rekening.</p>
+				<a href="track-and-trace.html"><img src="./images/pagina-1/button-rechts.svg" alt="Bekijk meer">Over DHL GoGreen</a>
+			</div>
 		</section>
 
 		<section>
-			<a href="index.html"><img src="./images/pagina-1/zakelijk.jpg" alt="DHL zakelijk"></a>
-			<h3>DHL zakelijk</h3>
-			<h2>Denk groot, bereik meer</h2>
-			<p>Verstuur je gemiddeld meer dan 30 pakketten per maand? Dan profiteer je met DHL zakelijk van interessante extra’s, zoals webshop-integratie en onze ophaaldienst. Maak zelf eenvoudig een zakelijk account aan zie meteen welke aantrekkelijke tarieven in jouw situatie gelden.</p>
-			<a href="index.html"> <img src="./images/pagina-1/button-rechts.svg" alt="Bekijk meer">Ontdek alle voordelen van DHL zakelijk</a>
+			<div>
+				<a href="track-and-trace.html"><img src="./images/pagina-1/zakelijk.jpg" alt="DHL zakelijk"></a>
+			</div>
+			<div class="hidden">
+				<h3>DHL zakelijk</h3>
+				<h2>Denk groot, bereik meer</h2>
+				<p>Verstuur je gemiddeld meer dan 30 pakketten per maand? Dan profiteer je met DHL zakelijk van interessante extra’s, zoals webshop-integratie en onze ophaaldienst. Maak zelf eenvoudig een zakelijk account aan zie meteen welke aantrekkelijke tarieven in jouw situatie gelden.</p>
+				<a href="track-and-trace.html"> <img src="./images/pagina-1/button-rechts.svg" alt="Bekijk meer">Ontdek alle voordelen van DHL zakelijk</a>
+			</div>
 		</section>
 
-		<div>
-			<a href="index.html"> <img src="./images/pagina-1/sticky-button.svg" alt="Bekijk meer">Download de app</a>
-		</div>
+		<a href="#top"> <img src="./images/pagina-1/sticky-button.svg" alt="download de app">Download de app</a>
 	</main>
 
 
 	<footer>
 		<section>
 			<nav>
-				<ul>
-					<li>Snel naar <img src="./images/pagina-1/button-beneden.svg" alt="Bekijk meer">
-						<ul>
-							<li> <a href="index.html">Offerte aanvragen </a></li>
-							<li> <a href="index.html">Track and trace </a></li>
-							<li> <a href="index.html">Bezorger gemist </a></li>
-							<li> <a href="index.html">Support </a></li>
-							<li> <a href="index.html">Veelgestelde vragen </a></li>
-						</ul>
-					</li>
-					<li>Consument <img src="./images/pagina-1/button-beneden.svg" alt="Bekijk meer">
-						<ul>
-							<li> <a href="index.html">Pakket versturen</a></li>
-							<li> <a href="index.html">Wereldwijd versturen</a></li>
-							<li> <a href="index.html">Bezorgtijden</a></li>
-							<li> <a href="index.html">Verpakkingstips</a></li>
-							<li> <a href="index.html">Tarieven</a></li>
-						</ul>
-					</li>
-					<li>Zakelijk <img src="./images/pagina-1/button-beneden.svg" alt="Bekijk meer">
-						<ul>
-							<li> <a href="index.html">Mijn zending</a></li>
-							<li> <a href="index.html">Dienstverlening</a></li>
-							<li> <a href="index.html">Locaties</a></li>
-							<li> <a href="index.html">Sectoren</a></li>
-							<li> <a href="index.html">Technologie</a></li>
-							<li> <a href="index.html">Kennisplatform</a></li>
-						</ul>
-					</li>
-					<li>Kom bij DHL <img src="./images/pagina-1/button-beneden.svg" alt="Bekijk meer">
-						<ul>
-							<li> <a href="index.html">Werken bij DHL</a></li>
-							<li> <a href="index.html">Bezorger</a></li>
-							<li> <a href="index.html">Logistiek</a></li>
-							<li> <a href="index.html">Servicepartner worden</a></li>
-							<li> <a href="index.html">Corporate</a></li>
-							<li> <a href="index.html">Stages</a></li>
-						</ul>
-					</li>
-					<li>Over DHL parcel <img src="./images/pagina-1/button-beneden.svg" alt="Bekijk meer">
-						<ul>
-							<li> <a href="index.html">Algemene voorwaarden</a></li>
-							<li> <a href="index.html">Privacyverklaring</a></li>
-							<li> <a href="index.html">Maatschappelijk</a></li>
-							<li> <a href="index.html">Duurzaamheid</a></li>
-							<li> <a href="index.html">Partnerships</a></li>
-							<li> <a href="index.html">Pers</a></li>
-						</ul>
-					</li>
-				</ul>
+				<details>
+					<summary>Snel naar <img src="./images/pagina-1/button-beneden.svg" alt="Bekijk meer"> </summary>
+						<a href="track-and-trace.html">Offerte aanvragen</a>
+						<a href="track-and-trace.html">Track and trace</a>
+						<a href="track-and-trace.html">Bezorger gemist</a>
+						<a href="track-and-trace.html">Support</a>
+						<a href="track-and-trace.html">Veelgestelde vragen</a>
+				</details>
+
+				<details>
+					<summary>Consument <img src="./images/pagina-1/button-beneden.svg" alt="Bekijk meer"></summary>
+						<a href="track-and-trace.html">Pakket versturen</a>
+						<a href="track-and-trace.html">Wereldwijd versturen</a>
+						<a href="track-and-trace.html">Bezorgtijden</a>
+						<a href="track-and-trace.html">Verpakkingstips</a>
+						<a href="track-and-trace.html">Tarieven</a>
+				</details>	
+
+				<details>
+					<summary>Zakelijk <img src="./images/pagina-1/button-beneden.svg" alt="Bekijk meer"> </summary> 
+						<a href="track-and-trace.html">Mijn zending</a>
+						<a href="track-and-trace.html">Dienstverlening</a>
+						<a href="track-and-trace.html">Locaties</a>
+						<a href="track-and-trace.html">Sectoren</a>
+						<a href="track-and-trace.html">Technologie</a>
+						<a href="track-and-trace.html">Kennisplatform</a>
+				</details>	
+
+				<details>
+					<summary>Kom bij DHL <img src="./images/pagina-1/button-beneden.svg" alt="Bekijk meer"></summary>
+						<a href="track-and-trace.html">Werken bij DHL</a>
+						<a href="track-and-trace.html">Bezorger</a>
+						<a href="track-and-trace.html">Logistiek</a>
+						<a href="track-and-trace.html">Servicepartner worden</a>
+						<a href="track-and-trace.html">Corporate</a>
+						<a href="track-and-trace.html">Stages</a>
+				</details>	
+	
+				<details>
+					<summary>Over DHL parcel <img src="./images/pagina-1/button-beneden.svg" alt="Bekijk meer"></summary>
+						<a href="track-and-trace.html">Algemene voorwaarden</a>
+						<a href="track-and-trace.html">Privacyverklaring</a>
+						<a href="track-and-trace.html">Maatschappelijk</a>
+						<a href="track-and-trace.html">Duurzaamheid</a>
+						<a href="track-and-trace.html">Partnerships</a>
+						<a href="track-and-trace.html">Pers</a>
+				</details>
+		
 				<button>Cookievoorkeuren</button>
 			</nav>
 			<nav>
 				<ul>
-					<li> <a href="index.html"><img src="./images/pagina-1/facebook.svg" alt="Logo van facebook"></a></li>
-					<li> <a href="index.html"><img src="./images/pagina-1/linkedin.svg" alt="Logo van Linkedin"></a></li>
-					<li> <a href="index.html"><img src="./images/pagina-1/twitter.svg" alt="Logo van Twitter"></a></li>
-					<li> <a href="index.html"><img src="./images/pagina-1/youtube.svg" alt="Logo van Youtube"></a></li>
-					<li> <a href="index.html"><img src="./images/pagina-1/instagram.svg" alt="Logo van Instagram"></a></li>
+					<li> <a href="track-and-trace.html"><img src="./images/pagina-1/facebook.svg" alt="Logo van facebook"></a></li>
+					<li> <a href="track-and-trace.html"><img src="./images/pagina-1/linkedin.svg" alt="Logo van Linkedin"></a></li>
+					<li> <a href="track-and-trace.html"><img src="./images/pagina-1/twitter.svg" alt="Logo van Twitter"></a></li>
+					<li> <a href="track-and-trace.html"><img src="./images/pagina-1/youtube.svg" alt="Logo van Youtube"></a></li>
+					<li> <a href="track-and-trace.html"><img src="./images/pagina-1/instagram.svg" alt="Logo van Instagram"></a></li>
 				</ul>
 			</nav>
 		</section>
 
 		<section>
-			<a href=""> <img src="./images/pagina-1/logo.png" alt="DHL logo"> </a>
+			<a href="track-and-trace.html"> <img src="./images/pagina-1/logo.png" alt="DHL logo"> </a>
 			<p>2022 DHL Parcel Benelux. Alle rechten voorbehouden.</p>
 			<section>
-				<a href="index.html"> <img src="./images/pagina-1/google-play-nl.svg" alt="Ontdek de app op Google Play"> </a>
-				<a href="index.html"> <img src="./images/pagina-1/apple.svg" alt="Dowload de app in de App Store"> </a>
+				<a href="track-and-trace.html"> <img src="./images/pagina-1/google-play-nl.svg" alt="Ontdek de app op Google Play"> </a>
+				<a href="track-and-trace.html"> <img src="./images/pagina-1/apple.svg" alt="Dowload de app in de App Store"> </a>
 			</section>
 		</section>
 	</footer>

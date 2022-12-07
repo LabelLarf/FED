@@ -200,10 +200,12 @@ van de goede selectoren, om deze vorm te geven. Het is alleen niet gelukt om de 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Divs kunnen weg in header door margin:auto op de DHL image te zetten.
+  - Uitklappen list kan door html tag: Details
+  - Knop van download de app kan de div weg door: main > a direct aan te roepen.
+  - Voeg een label toe aan de form
+  - Alle a’tjes linken naar de tegenovergestelde pagina.
+  - Maak de hamburger een button
 
 </details>
 

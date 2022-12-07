@@ -1,12 +1,32 @@
-// JavaScript Document
-console.log("hi");
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
 
-var hamburger = Document.querySelector('header nav a:last-of-type img');
-var menu = Document.querySelector('header nav ul');
 
-function doeOpen() {
-    hamburger.classList.toggle("header nav ul.active"); 
-    menu.classList.toggle("header nav ul.active");
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
 }
 
-hamburger.addEventListener("click", doeOpen);
+function close(){
+    mainMenu.style.top = '-100%';
+}
+
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
