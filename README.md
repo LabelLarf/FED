@@ -219,30 +219,68 @@ van de goede selectoren, om deze vorm te geven. Het is alleen niet gelukt om de 
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  De bevindingen die bij mij naar boven waren dat:
+  
+  Screenreader:
+  - De website zegt 2X wat er in de eerste sectie staat.
+  - 'Bekijk meer' word gezegd op knoppen, terwijl er iets anders staat.
+  - Afbeeldingen moeten duidelijker worden wat slaat op de tekst ernaast.
+  - 'Klikbaar icon van dit bedrijf' is een betere benaming dan 'afbeelding bedrijf'.
+  - 'vul ..... in' is duidelijker om te gebruiken in het formulier.
+  - HTML structuur stond niet netjes met headings.
+  - Display hidden/none gebruiken voor onzichtbare rare button midden in header.
+
+  Muis en toetsenbord:
+  - In de nav word de hamburger button weergeven, terwijl deze niet zichtbaar is.
+  - Er is nog geen vormgeving voor focus toegepast.
+
+  Motoriek (elastiekjes):
+  - Scrollen op een laptop is nog lastig, maar op buttons/linkjes drukken gaat prima.
+
+  Visueel (brillen):
+  - (Gele kleur bril) Licht grijze gebieden zijn niet te onderscheiden met de gele kleuren bril.
+  - (Bril met kleine kijkhoek) Website is goed leesbaar door de 2 koloms grid en grote content.
+
+
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Door het gebruik van de screenreader kwam ik erachter dat er aardig nog wat elementen waren die niet goed of netter overgebracht zouden kunnen worden. 
+  Dit waren:
+  - De website zegt 2X wat er in de eerste sectie staat.
+  - 'Bekijk meer' word gezegd op knoppen, terwijl er iets anders staat.
+  - Afbeeldingen moeten duidelijker worden wat slaat op de tekst ernaast.
+  - 'Klikbaar icon van dit bedrijf' is een betere benaming dan 'afbeelding bedrijf'.
+  - 'vul ..... in' is duidelijker om te gebruiken in het formulier.
+  - HTML structuur stond niet netjes met headings.
+  - Display hidden/none gebruiken voor onzichtbare rare button midden in header.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Ik ga dit oplossen door te kijken naar:
+  - Welke secties ik de ALT beter weg kan halen, aangezien dit dubbel gezegd word.
+  - De tekst met 'bekijk meer' van knoppen aan te passen naar wat relevants die bij de knop hoort.
+  - Afbeeldingen meer relevante ALT tekst te geven die aanslaat op de tekst die erbij hoort.
+  - Iconen een beter begrijpbare ALT tekst te geven.
+  - De ALT van het formulier nog duidlijker te maken wat er precies ingevuld moet worden.
+  - De HTML Headings heb ik nu aangepast, zodat dit netjes weergeven word.
+  - De button in de header heb ik gefixed nu door de button element weg te halen en alleen de IMG te gebruiken in de HTML. 
+
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Met het testen van de muis en het toetsenbord, kwam ik erachter dat de tab een onzichtbare button liet zien in de header en nog geen vormgeving had toegepast voor :focus elementen.
+ 
+  De missende vormgeving voor de focus state los ik op door een focus element toe te passen op iedere interactieve element. De button in de header heb ik gefixed nu door de button element weg te halen en alleen de IMG te gebruiken in de HTML.
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Ik had getest met elastiekjes en kwam erachter dat scrollen zonder muis nog best lastig is, maar dat de knoppen goed bereikbaar en drukbaar waren.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Hier had ik niks wat aangepast moest worden.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Hier had ik getest met een bril die gele glazen had en een bril die een heel klein percentage (2 kleine gaatjes) liet zien. Met de gele glazen kwam naar voren dat lichtgrijze gebieden niet te onderscheiden waren met de achtergrond. De bril met de kleine gaatjes liet mij zien dat de secties in de website goed leesbaar waren, omdat dit in een 2koloms grid bevond en groot afgebeeld was.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Het probleem met de gele glazen kan ik oplossen door de lichtgrijze gebieden wat donkerder te maken, waardoor er meer contrast ontstaat en beter te onderscheiden word. Er was geen probleem ontstaan met de andere bril.
 
 </details>
 
@@ -256,17 +294,18 @@ van de goede selectoren, om deze vorm te geven. Het is alleen niet gelukt om de 
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Ik was deze week veel bezig met het responsive maken van de website en subtiele hovers toe te voegen. Verder was ik bezig met animaties. Ook liep ik nergens echt tegenaan.
+  Wat ik de aankomende week nog wil uitwerken is meerdere states toevoegen, netheid van de code nakijken, animaties toevoegen, checken op toegankelijkheid en het hamburger menu aanpassen in de html. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Larissa                         | Yasmine            | Lars         | 
+  | ---                             | ---                | ---          | 
+  | Hoe TAB focus border aanpassen  | Onbekend           | Onbekend     |
+  | Divs logisch gebruikt met class |                    |              | 
+  | Warnings sections erg?          |                    |              | 
+  |                                 | ...                | ...          | 
 
 
   ### Verslag van meeting
@@ -315,8 +354,8 @@ van de goede selectoren, om deze vorm te geven. Het is alleen niet gelukt om de 
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Video over hoe een hamburger menu werkt (had hier met de opdrachten nog moeite mee en moest dit 'live' even zien om het goed te begrijpen): https://www.youtube.com/watch?v=1iS0r238G4g
+  2. Video over hoe ik een scroll in effect met javascript kon toepassen: https://www.youtube.com/watch?v=T33NN_pPeNI
+
 
 </details>

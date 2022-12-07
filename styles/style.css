@@ -12,7 +12,7 @@
 :root {
 	--color-text:rgb(11, 11, 11);
 	--color-background:whitesmoke;
-	--color-footer: #f1f1f1;
+	--color-footer: #e7e7e7;
 	--color-button: #C6313C;
 	--gradient-background: rgb(247,206,70);
 	--gradient:linear-gradient(90deg, rgba(247,206,70,1) 0%, rgba(245,231,181,1) 100%);
@@ -33,42 +33,34 @@ Body{
 }
 
 h1{
-	font-family: var(--heading-text);
-	font-weight: 800;
-	text-transform: uppercase;
-    line-height: 1;
-	color:var(--color-background);
-}
-
-h2{
-	font-family: var(--heading-text);
-	font-weight: 800;
-	text-transform: uppercase;
-    line-height: 1;
-	color: var(--color-text);
-}
-
-h3{
 	margin-top:2em;
 	font-family: var(--body-text);
 	font-weight: 200;
 	text-transform: uppercase;
 	line-height: 0em;
+	font-size:1.2em;
 	color:var(--color-background);
 }
 
-h4{
+h2{
+	margin-top: 0.5em;
+	font-family: var(--heading-text);
+	font-weight: 800;
+	text-transform: uppercase;
+    line-height: 1;
+	font-size:2em;
+	color:var(--color-background);
+}
+
+h3{
 	margin:0em;
 	font-family: var(--body-text);
 	font-weight: 600;
 	font-size: 1em;
 }
 
-label{
-	font-family: var(--heading-text);
-	font-weight: 100;
-    line-height: 1;
-	color: var(--color-text);
+*:focus{
+	background-color:#aa2a32;
 }
 
 
@@ -155,7 +147,7 @@ footer section details{
 }
 
 footer section details:hover{
-	background-color: rgb(227, 227, 227);
+	background-color: rgb(213, 213, 213);
 	color: var(--color-button);
 }
 
@@ -330,6 +322,17 @@ main section:nth-of-type(2), section:nth-of-type(3), section:nth-of-type(4), sec
 	padding: 0em 2em 0em 2em;
 }
 
+main section:nth-of-type(2) h1, main section:nth-of-type(4) h2, main section:nth-of-type(5) h2, main section:nth-of-type(6) h2{
+	font-family: var(--heading-text);
+	font-size:2em;
+	color: var(--color-text);
+}
+
+main section:nth-of-type(4) h1, main section:nth-of-type(5) h1, main section:nth-of-type(6) h1, #trackandTrace main section:nth-of-type(4) h1{
+	font-family: var(--body-text);
+	color:var(--color-text);
+}
+
 main section:nth-of-type(2) a:first-of-type img, main section:nth-of-type(3) a:first-of-type img, main section:nth-of-type(4) a:first-of-type img, main section:nth-of-type(5) a:first-of-type img, main section:nth-of-type(6) a:first-of-type img{
 	width: 100%;
 	text-align: center;
@@ -461,7 +464,7 @@ main > a img{
 	background-size: cover;
 }
 
-
+/* Formulier 1*/
 main section:first-of-type form{
 	padding: 2em;
 	background-color: var(--color-background);
@@ -481,6 +484,14 @@ main section:first-of-type form h4{
 main section:first-of-type form p{
 	margin-top: 0.2em;
 	margin-bottom: 1.5em;
+}
+
+label{
+	font-family: var(--heading-text);
+	font-weight: 100;
+    line-height: 1;
+	color: var(--color-text);
+	cursor: pointer;
 }
 
 form:invalid {
@@ -585,6 +596,27 @@ main section:first-of-type form button:hover{
 	margin-left: 0.5em;
 	border-right: 0.1em solid black;
 	height: 3em;
+}
+
+#trackandTrace main section:nth-of-type(2) h1, #trackandTrace main section:nth-of-type(3) h1{
+	margin-top:0em;
+	font-family: var(--body-text);
+	font-size:1.2em;
+	color:var(--color-text);
+}
+
+#trackandTrace main section:nth-of-type(2) h2{
+	margin: 0em 0em 0em 0em;
+	font-family: var(--heading-text);
+	font-size:2em;
+	color:var(--color-text);
+}
+
+#trackandTrace main section:nth-of-type(4) h1, #trackandTrace main section:nth-of-type(5) h1{
+	margin-top:1.2em;
+	font-family: var(--heading-text);
+	font-size:2em;
+	color:var(--color-text);
 }
 
 
@@ -777,8 +809,12 @@ main section:first-of-type form button:hover{
 
 	main section:first-of-type div h1{
 		margin-top: 0.5em;
-		font-size: 2.5em;
+		font-size: 1.5em;
 		line-height: 1em;
+	}
+
+	main section:first-of-type div h2{
+		font-size: 2.5em;
 	}
 
 	main section:first-of-type div:nth-of-type(2) a{
