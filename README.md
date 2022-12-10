@@ -375,6 +375,16 @@ van de goede selectoren, om deze vorm te geven. Het is alleen niet gelukt om de 
   - Lichtgrijze gebieden waren te licht en had te weinig contrast. Deze heb ik nu wat donkerder gemaakt, zodat het contrast hoger is.
 
 
+Wat ik verbetert heb, vegeleken met de orginele site:
+  - Je kan met TAB door alle secties heen en het is vormgegeven
+  - Formulier is veel meer UX gebruiksvriendelijk
+  - Buttons hebben een veel duidelijkere hover
+  - De buttons hebben een active state
+  - Download de app knop heeft een hover + active state + animatie
+  - Afbeeldingen hebben een hover
+  - Bus heeft een leuke easter egg :)
+  - Afbeeldingen hebben nu een duidelijke naam voor de screenreaders.
+
 
 
   ### Dit was lastig/Is niet gelukt:
