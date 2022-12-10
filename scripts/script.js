@@ -1,7 +1,7 @@
-const mainMenu = document.querySelector('.mainMenu');
-const closeMenu = document.querySelector('.closeMenu');
-const openMenu = document.querySelector('.openMenu');
-
+/* Hamburger menu*/
+var mainMenu = document.querySelector('.mainMenu');
+var closeMenu = document.querySelector('.closeMenu');
+var openMenu = document.querySelector('.openMenu');
 
 
 openMenu.addEventListener('click',show);
@@ -17,8 +17,8 @@ function close(){
 }
 
 
-
-const observer = new IntersectionObserver((entries) => {
+/* Voor het laten bekijken wanneer een section op de pagina is*/
+var observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
         if (entry.isIntersecting){
@@ -27,6 +27,12 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-
-const hiddenElements = document.querySelectorAll('.hidden');
+var hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+
+
+/* Voor het biepen van de auto*/
+function playSound(bus) {
+    document.getElementById(bus).play();
+  };

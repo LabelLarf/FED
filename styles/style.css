@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
-
-
-
 /***********************************/
 /* ALGEMENE STYLING BEIDE PAGINA'S*/
 /***********************************/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+*{
+  box-sizing:border-box;  
+}
+
 :root {
 	--color-text:rgb(11, 11, 11);
 	--color-background:whitesmoke;
 	--color-footer: #e7e7e7;
 	--color-button: #C6313C;
+	--color-active: #8e2129;
 	--gradient-background: rgb(247,206,70);
 	--gradient:linear-gradient(90deg, rgba(247,206,70,1) 0%, rgba(245,231,181,1) 100%);
 	--heading-text: 'Passion One', sans-serif;
@@ -37,7 +36,7 @@ h1{
 	font-family: var(--body-text);
 	font-weight: 200;
 	text-transform: uppercase;
-	line-height: 0em;
+	line-height: 1em;
 	font-size:1.2em;
 	color:var(--color-background);
 }
@@ -58,6 +57,17 @@ h3{
 	font-weight: 600;
 	font-size: 1em;
 }
+
+
+/* Focus state algemeen*/
+a:focus, summary:focus, button:focus, input:focus{
+	outline-color:var(--color-button);
+}
+
+form fieldset button{
+	outline-color: #f7ce46;
+}
+
 
 
 
@@ -105,9 +115,13 @@ header nav .mainMenu li a{
 }
 
 header nav .mainMenu li a:hover{
-	background: #C6313C;
+	background: var(--color-button);
 	color:var(--color-footer);
 	transition: 0.2s ease-in-out;
+}
+
+header nav .mainMenu li a:active{
+	background: var(--color-active);
 }
 
 header nav .openMenu{
@@ -122,6 +136,7 @@ header nav .mainMenu .closeMenu{
 	font-size: 2rem;
 	cursor: pointer;
 }
+
 
 
 
@@ -172,7 +187,7 @@ footer section details a{
 	display: flex;
 	font-family: var(--body-text);
 	text-decoration: underline;
-	color: black;
+	color: var(--color-text);
 	cursor: pointer;
 }
 
@@ -213,15 +228,11 @@ footer section nav:nth-of-type(2) ul{
 	padding-left: 0em;
 	display: flex;
 	gap:0.2em;
+	animation: bounce;
 }
 
 footer section nav:nth-of-type(2) img{
 	width: 3em;
-	transition: 0.2s ease-in-out;
-}
-
-footer section nav:nth-of-type(2) img:hover{
-	transform: scale(1.5);
 }
 
 
@@ -258,12 +269,9 @@ footer section:nth-of-type(2) section a img:first-of-type{
 
 
 
-
-
 /**********************/
 /* STYLING PAGINA 1*/
 /**********************/
-
 
 /* CONTENT SECTIE 1*/
 main section:first-of-type{
@@ -293,6 +301,10 @@ main section:first-of-type a:hover{
 	transform: scale(1.05); 
 }
 
+main section:first-of-type a:active{
+	background-color: var(--color-active);
+}
+
 main section:first-of-type a img{
 	width: 4.5em;
 }
@@ -309,7 +321,6 @@ main section:first-of-type a section{
 main section:first-of-type a section img{
 	width: 3em;
 }
-
 
 
 /* CONTENT SECTIE 2-4-5-6*/
@@ -334,8 +345,8 @@ main section:nth-of-type(2) a:first-of-type img, main section:nth-of-type(3) a:f
 	text-align: center;
 }
 
-main section:nth-of-type(2) div:nth-of-type(2) a, main section:nth-of-type(3) div:nth-of-type(2) a, main section:nth-of-type(4) div:first-of-type a, main section:nth-of-type(5) div:first-of-type a, main section:nth-of-type(6) div:nth-of-type(2) a, #trackandTrace main section:nth-of-type(5) a, #trackandTrace main section:nth-of-type(4) a{
-	width: 100%;
+main section:nth-of-type(2) div:nth-of-type(2) a, main section:nth-of-type(3) div:nth-of-type(2) a, main section:nth-of-type(4) div a, main section:nth-of-type(5) div:first-of-type a, main section:nth-of-type(6) div:nth-of-type(2) a, #trackandTrace main section:nth-of-type(5) a, #trackandTrace main section:nth-of-type(4) div:nth-of-type(2) a{
+	width: max-content;
 	padding-left: 0em;
 	display: flex;
 	align-items: center;
@@ -354,12 +365,14 @@ main section:nth-of-type(2) div:nth-of-type(2) a:hover, main section:nth-of-type
 	text-decoration: underline;
 }
 
+main section:nth-of-type(2) div:nth-of-type(2) a:active, main section:nth-of-type(3) div:nth-of-type(2) a:active, main section:nth-of-type(4) div:first-of-type a:active, main section:nth-of-type(5) div:first-of-type a:active, main section:nth-of-type(6) div:nth-of-type(2) a:active, #trackandTrace main section:nth-of-type(5) a:active, #trackandTrace main section:nth-of-type(4) a:active{
+	color:var(--color-active);
+}
+
 main section:nth-of-type(2) div:nth-of-type(2) a img, main section:nth-of-type(3) a:first-of-type img, main section:nth-of-type(4) div:first-of-type a img, main section:nth-of-type(5) div:first-of-type a img, main section:nth-of-type(6) div:nth-of-type(2) a img{
 	width: 3em;
 	margin-left:-0.5em;
 }
-
-
 
 
 /* CONTENT SECTIE 3*/
@@ -380,7 +393,7 @@ main section:nth-of-type(3) a img{
 }
 
 main section:nth-of-type(3) a{
-	width: 70%;
+	width: max-content;
 	padding-left: 0em;
 	display: flex;
 	align-items: center;
@@ -398,6 +411,9 @@ main section:nth-of-type(3) a:hover{
 	transform: scale(1.05); 
 }
 
+main section:nth-of-type(3) a:active{
+	color:var(--color-active);
+}
 
 
 /* CONTENT SECTIE 4-5-6*/
@@ -406,18 +422,16 @@ main section:nth-of-type(4) h3, main section:nth-of-type(5) h3, main section:nth
 }
 
 
-
 /* CONTENT SECTIE 6*/
 main section:nth-of-type(6){
 	padding-bottom:4em;
 }
 
 
-
-
 /* STICKY KNOP*/
 main > a{
-	width: 12em;
+	width: max-content;
+	padding-right:1em;
 	height: 3.5em;
 	position: fixed;
 	bottom: 2em;
@@ -441,9 +455,14 @@ main > a:hover{
 	transform: scale(1.05); 
 }
 
+main > a:active{
+	background-color: rgb(204, 140, 140);
+}
+
 main > a img{
 	width: 3em;
 }
+
 
 
 
@@ -459,6 +478,7 @@ main > a img{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 
 /* Formulier 1*/
 main section:first-of-type form{
@@ -572,8 +592,9 @@ main section:first-of-type form button:hover{
 	color:var(--color-button);
 }
 
-
-
+main section:first-of-type form button:active{
+	background-color: rgb(204, 140, 140);
+}
 
 
 /* CONTENT SECTIE 2*/
@@ -595,7 +616,6 @@ main section:first-of-type form button:hover{
 }
 
 #trackandTrace main section:nth-of-type(2) h1, #trackandTrace main section:nth-of-type(3) h1{
-	margin-top:0em;
 	font-family: var(--body-text);
 	font-size:1.2em;
 	color:var(--color-text);
@@ -616,7 +636,6 @@ main section:first-of-type form button:hover{
 }
 
 
-
 /* CONTENT SECTIE 3 + 4*/
 #trackandTrace main section:nth-of-type(3){
 	background-image: none;
@@ -635,6 +654,10 @@ main section:first-of-type form button:hover{
 	width: 3em;
 }
 
+#trackandTrace main section:nth-of-type(4) div a{
+	width: 100%;
+}
+
 
 /* CONTENT SECTIE 5*/
 #trackandTrace main section:nth-of-type(5){
@@ -650,7 +673,7 @@ main section:first-of-type form button:hover{
 }
 
 #trackandTrace main section:nth-of-type(5) details:hover{
-	background-color: rgb(227, 227, 227);
+	background-color: rgb(213, 213, 213);
 	color: var(--color-button);
 }
 
@@ -696,6 +719,10 @@ main section:first-of-type form button:hover{
 	transform: none; 
 }
 
+#trackandTrace main section:nth-of-type(5) details p a:active{
+	color:var(--color-active);
+}
+
 #trackandTrace main section:nth-of-type(5) details summary img{
 	width: 2em;
 }
@@ -711,6 +738,8 @@ main section:first-of-type form button:hover{
 #trackandTrace main section:nth-of-type(5) > a img, #trackandTrace main section:nth-of-type(5) details:nth-of-type(2) a img{
 	margin-left:0.8em;
 }
+
+
 
 
 /**********************/
@@ -750,13 +779,16 @@ main section:first-of-type form button:hover{
 		padding:1em;
 	}
 
-	header nav .mainMenu li a:hover, header nav .mainMenu li a:active {
+	header nav .mainMenu li a:hover{
 		background: none;
 		color:var(--color-button);
 		transition: 0.2s ease-in-out;
 		text-decoration: underline;
 	}
 
+	header nav .mainMenu li a:active{
+		color:var(--color-active);
+	}
 }
 
 
@@ -766,6 +798,7 @@ main section:first-of-type form button:hover{
 		grid-template-columns: 1fr 1fr;
 	}
 	
+
 	/* Section 1 + 2 + 3 + 6*/
 	main section:first-of-type, main section:nth-of-type(2), main section:nth-of-type(3), main section:nth-of-type(6),#trackandTrace main section:first-of-type, #trackandTrace main section:nth-of-type(3), #trackandTrace main section:nth-of-type(4), #trackandTrace main section:nth-of-type(5){
 		grid-column-start: 1;
@@ -784,10 +817,13 @@ main section:first-of-type form button:hover{
 		column-gap: 2em;
 	}
 
+	main h1{
+		margin-top:0em;
+	}
+
 	main section:nth-of-type(2), main section:nth-of-type(3), main section:nth-of-type(6){
 		margin:2em 3em 2em 3em;
 	}
-	/* Einde section 1 + 2 + 3*/
 
 
 	/* Section 1*/
@@ -872,6 +908,7 @@ main section:first-of-type form button:hover{
 		background: none;
 	}
 
+
 	/* Section 6*/
 	main section:nth-of-type(6){
 		margin:2em 3em 4em 3em;
@@ -882,7 +919,6 @@ main section:first-of-type form button:hover{
 	main section:nth-of-type(6) div:first-of-type{
 		padding-top:6em;
 	}
-	
 }
 
 
@@ -913,16 +949,24 @@ main section:first-of-type form button:hover{
 
 	/* Section 4*/
 	#trackandTrace main section:nth-of-type(4) div:nth-of-type(2){
-		margin-top:4em;
+		margin-top:1em;
 		padding-right:3em;
 	}
-
 
 	/* Section 6*/
 	main section:nth-of-type(6) div:nth-of-type(2){
 		margin:4em 2em 4em 2em;
 	}
 }
+
+
+@media(min-width: 1370px){
+	#trackandTrace main section:nth-of-type(4) div:nth-of-type(2){
+		margin-top:3em;
+		padding-right:3em;
+	}
+}
+
 
 @media(min-width: 1430px){
 	/* Section 1*/
@@ -956,6 +1000,7 @@ main section:first-of-type form button:hover{
 	}
 }
 
+
 @media(min-width: 1700px){
 	/* Section 1*/
 	main section:first-of-type div:nth-of-type(2){
@@ -982,6 +1027,7 @@ main section:first-of-type form button:hover{
 		margin:8em 2em 4em 2em;
 	}
 }
+
 
 @media (prefers-color-scheme:/*dark*/) {
 	:root {
@@ -1036,7 +1082,9 @@ main section:first-of-type form button:hover{
 
 
 
-
+/***************/
+/* Animaties*/
+/***************/
 /* Animatie van het scroll-in effect*/
 .hidden{
 	opacity: 0;
@@ -1050,8 +1098,67 @@ main section:first-of-type form button:hover{
 
   }
 
-  @media(prefers-reduced-motion){
+/* Zorgt ervoor dat mensen de animatie uit kunnen zetten*/
+@media(prefers-reduced-motion){
 	.hidden{
-		transition: none;
+	transition: none;
 	}
-  }
+}
+
+  
+/* Animatie op de icons in de footer*/
+footer section nav:nth-of-type(2) ul li img:hover, main > a:hover {
+	animation-name:bounce-animation;
+	animation-duration:1s;
+	animation-iteration-count:1;
+}
+
+@keyframes bounce-animation {
+	0% {
+	  transform:scale(1);
+	}
+	50% {
+	  transform:scale(2);
+	}
+	100% {
+	  transform:scale(1);
+	}
+}
+
+
+/* Animatie op de dowload button*/
+main > a:hover {
+	animation-name:big-animation;
+	animation-duration:1s;
+	animation-iteration-count:10;
+	
+}
+
+@keyframes big-animation {
+	0% {
+	  transform:scale(1);
+	}
+	20% {
+	  transform:scale(1.1);
+	}
+
+	40% {
+		transform:scale(1);
+	}
+
+	60% {
+		transform:scale(1.1);
+	}
+
+	80% {
+		transform:scale(1);
+	}
+
+	90% {
+	  transform:scale(1.1);
+	}
+
+	100% {
+		transform:scale(1);
+	  }
+}

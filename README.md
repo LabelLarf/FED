@@ -311,10 +311,10 @@ van de goede selectoren, om deze vorm te geven. Het is alleen niet gelukt om de 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Een outline gebruiken op alle interactieve:focus elementen om de border aan te passen.
+  - White-space:no-wrap voor download button gebruiken, zodat deze netjes doorloopt.
+  - Voor knoppen die te lang zijn met de a: Width: min-content;, White-space: no-wrap;
+  - Op de auto een audiofile afspelen dat die toetert, doormiddel van javascript.
 
 </details>
 
@@ -328,19 +328,64 @@ van de goede selectoren, om deze vorm te geven. Het is alleen niet gelukt om de 
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/mobiel-1.png" width="375px" alt="top">
+  <img src="readme-images/scherm-1.png" width="375px" alt="top">
+  <img src="readme-images/desktop-1.png" width="375px" alt="top">
+
+  <img src="readme-images/mobiel-2.png" width="375px" alt="top">
+  <img src="readme-images/scherm-2.png" width="375px" alt="top">
+  <img src="readme-images/desktop-2.png" width="375px" alt="top">
+
+  <img src="readme-images/mobiel-3.png" width="375px" alt="top">
+  <img src="readme-images/scherm-3.png" width="375px" alt="top">
+  <img src="readme-images/desktop-3.png" width="375px" alt="top">
+
+  <img src="readme-images/mobiel-4.png" width="375px" alt="top">
+  <img src="readme-images/scherm-4.png" width="375px" alt="top">
+  <img src="readme-images/desktop-4.png" width="375px" alt="top">
+
+  <img src="readme-images/mobiel-5.png" width="375px" alt="top">
+  <img src="readme-images/scherm-5.png" width="375px" alt="top">
+  <img src="readme-images/desktop-5.png" width="375px" alt="top">
+
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Wat goed ging was kleine elementen toepassen die ik nog niet eerder heb gebruikt, zoals animaties, states, een goed UX formulier en de details tag.
+  <img src="readme-images/state.png" width="375px" alt="top">
+  <img src="readme-images/form.png" width="375px" alt="top">
+  <img src="readme-images/details.png" width="375px" alt="top">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik vond deze erg leuk om te gebruiken en daarmee een leuke website mee op te bouwen.
+
+  Ook het responsive maken van de website vond ik erg interessant. In het begin moest ik er goed naar kijken hoe ik bepaalde grids/flexboxes moest gebruiken, maar uiteindelijk was het toch gelukt.
+  Wat ik ook heb geleerd is hoe belangrijk het is om goede UX te gebruiken, vooral in de HTML files aangezien dit super belangrijk is voor mensen met een screenreader. Ik wist niet dat het zo belangrijk zou zijn en heb hier veel van geleerd.
+
+  Wat heb ik veranderd voor betere toegankelijkerheid?
+  Voor de screenreader:
+  - Bepaalde elementen heb ik de ALT weggehaald, aangezien dit dubbel gezegd word.
+  - De tekst met 'bekijk meer' van knoppen heb ik aangepast naar wat relevants die bij de knoppen horen.
+  - Afbeeldingen heb ik meer relevante ALT tekst geven die aanslaat op de tekst die erbij hoort.
+  - Iconen een beter begrijpbare ALT tekst geven.
+  - De HTML Headings heb ik nu aangepast, zodat dit netjes weergeven word.
+  - De button in de header heb ik gefixed nu door de button element weg te halen en alleen de IMG te gebruiken in de HTML. 
+
+  Voor de testen met de gele bril en de kleine gaten bril:
+  - Lichtgrijze gebieden waren te licht en had te weinig contrast. Deze heb ik nu wat donkerder gemaakt, zodat het contrast hoger is.
+
+
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Wat ik wat lastig vond was het laten werken van het hambuger menu. Ik had meer moeite met het begrijpen hoe het werkte dan de code zelf. Uiteindelijk had ik er een video erbij gepakt om beter te begrijpen hoe het werkte, en snappte ik het uiteindelijk wel.
+  Wat niet gelukt was met het hamburger menu, was dat je er met TAB doorheen kon gaan. Helaas door het gebrek aan tijd, had ik dit niet meer uit kunnen vogelen. Ook had ik dit liever als span wilen aanroepen in plaats van een IMG.
+  <img src="readme-images/hamburger.png" width="375px" alt="bummer">
+  Als laatst wat niet gelukt was, was het toevoegen van een transition op de details tag, zodat deze wat smoother opengaat.
+ <img src="readme-images/details.png" width="375px" alt="bummer">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Wat ik had gedaan als ik meer tijd had gehad, is lazers toegevoegd, nog meer animaties hebben toegepast, beter gekeken hebben of de code die ik heb geschreven korter kan (CSS) of netter en bepaalde elementen nog netter hebben neergezet.
+
 </details>
 
 
@@ -352,10 +397,8 @@ van de goede selectoren, om deze vorm te geven. Het is alleen niet gelukt om de 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
   1. Video over hoe een hamburger menu werkt (had hier met de opdrachten nog moeite mee en moest dit 'live' even zien om het goed te begrijpen): https://www.youtube.com/watch?v=1iS0r238G4g
   2. Video over hoe ik een scroll in effect met javascript kon toepassen: https://www.youtube.com/watch?v=T33NN_pPeNI
-
-
+  3. Codepen bestand over hoe je een audiofile op een IMG kan zetten: https://codepen.io/aamnah/pen/gazjYa
+  4. Soundeffect wat ik heb gebruikt voor het toeteren: https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6188
 </details>
