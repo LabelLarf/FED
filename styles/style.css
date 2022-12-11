@@ -1029,7 +1029,7 @@ main section:first-of-type form button:active{
 }
 
 
-@media (prefers-color-scheme:/*dark*/) {
+@media (prefers-color-scheme:dark) {
 	:root {
 		--color-button: #C6313C;
 		--gradient-background: rgb(247,206,70);

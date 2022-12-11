@@ -395,6 +395,7 @@ Wat ik verbetert heb, vegeleken met de orginele site:
  <img src="readme-images/details.png" width="375px" alt="bummer">
 
   Wat ik had gedaan als ik meer tijd had gehad, is lazers toegevoegd, nog meer animaties hebben toegepast, beter gekeken hebben of de code die ik heb geschreven korter kan (CSS) of netter en bepaalde elementen nog netter hebben neergezet.
+  Verder had ik de dark mode net iets strakker vormgegeven willen hebben.
 
 </details>
 
